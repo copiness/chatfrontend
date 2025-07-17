@@ -5,7 +5,7 @@ import "./index.css";
 import { UserProvider } from "./context/UserContext.jsx";
 import { ChatProvider } from "./context/ChatContext.jsx";
 
-export const server = "http://localhost:5000";
+export const server = import.meta.env.VITE_API_BASE_URL;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
